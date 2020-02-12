@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class SortChallengeImpl implements SortChallenge {
 
+	@Override
 	public int[] simpleSort(int[] list, boolean ascending) {
 		if(isNullOrEmpty(list)) {
 			return list;
@@ -14,6 +15,7 @@ public class SortChallengeImpl implements SortChallenge {
 		return mergeSort(list, ascending);
 	}
 
+	@Override
 	public void printSortedFrequency(int[] list) {
 		if(isNullOrEmpty(list)) {
 			return;
@@ -24,6 +26,7 @@ public class SortChallengeImpl implements SortChallenge {
 			.forEach((number, count) -> System.out.println(number + " appears " + count + " times"));
 	}
 	
+	@Override
 	public int numberOfUniqueValues(int[] list) {
 		if (isNullOrEmpty(list)) {
 			return 0;

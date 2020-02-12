@@ -7,7 +7,6 @@ public class Application {
 	private static final String ASCENDING_SORT = "asc";
 	
 	private static SortChallenge sorter = new SortChallengeImpl();
-	
 
 	public static void main(String[] args) {
 		
